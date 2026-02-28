@@ -1,0 +1,442 @@
+/* ----------------------------------------------------
+   GLOBAL STYLE
+---------------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f4f6fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ----------------------------------------------------
+   HEADER
+---------------------------------------------------- */
+.header {
+  width: 100%;
+  background: #07a3e6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 6%;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: 700;
+  margin-right: 500px;
+  color: #eceef1;
+}
+
+.nav a {
+  margin: 0 16px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #333;
+  transition: .3s;
+}
+
+.nav a:hover,
+.nav a.active {
+  color: #0066ff;
+  font-weight: bold;
+}
+
+.btn-kembali {
+  padding: 8px 15px;
+  background: #0066ff;
+  border: none;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.btn-kembali:hover {
+  background: #004fd4;
+}
+
+/* ----------------------------------------------------
+   SLIDER
+---------------------------------------------------- */
+.slider {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.slide img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.caption {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0,0,0,0.55);
+  padding: 15px 20px;
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+  width: 80%;
+}
+
+/* ----------------------------------------------------
+   HALAMAN HOME UTAMA
+---------------------------------------------------- */
+.konten {
+  padding: 50px 6%;
+  text-align: center;
+}
+
+.konten h2 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #222;
+}
+
+.konten p {
+  max-width: 850px;
+  margin: auto;
+  margin-top: 10px;
+  font-size: 17px;
+  color: #555;
+}
+
+.fitur-home {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  justify-items: center;
+}
+
+.fitur-home .card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 310px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  transition: .3s;
+}
+
+.fitur-home .card:hover {
+  transform: translateY(-6px);
+}
+
+.fitur-home img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* ----------------------------------------------------
+   HALAMAN TENTANG
+---------------------------------------------------- */
+.about-container {
+  width: 100%;
+  padding: 50px 6%;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.about-container img {
+  width: 380px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.about-text {
+  max-width: 500px;
+}
+
+.about-text h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.about-text p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* ----------------------------------------------------
+   PROGRAM PAGE
+---------------------------------------------------- */
+.judul-program {
+  text-align: center;
+  padding: 60px 20px 20px;
+}
+
+.judul-program h1 {
+  font-size: 34px;
+  font-weight: 700;
+  color: #222;
+}
+
+.judul-program p {
+  font-size: 17px;
+  margin-top: 10px;
+  color: #555;
+}
+
+.program-list {
+  text-align: center;
+  padding: 40px 6%;
+}
+
+.program-list h2 {
+  font-size: 28px;
+  color: #222;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+.program-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  justify-items: center;
+}
+
+.card-program {
+  width: 100%;
+  max-width: 310px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  transition: .3s ease;
+  text-align: center;
+}
+
+.card-program:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 28px rgba(0,0,0,0.12);
+}
+
+.card-program h3 {
+  font-size: 20px;
+  color: #0066ff;
+  margin-bottom: 10px;
+}
+
+.card-program p {
+  font-size: 15px;
+  color: #555;
+}
+
+/* ----------------------------------------------------
+   KONTAK PAGE
+---------------------------------------------------- */
+.kontak-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.form-kontak {
+  width: 100%;
+  max-width: 420px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+}
+
+.form-kontak input,
+.form-kontak textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+.form-kontak button {
+  width: 100%;
+  padding: 12px;
+  background: #0066ff;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.form-kontak button:hover {
+  background: #0053d1;
+}
+
+.info-kontak {
+  max-width: 300px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+}
+
+.info-kontak h3 {
+  margin-bottom: 15px;
+  color: #0066ff;
+}
+
+/* ----------------------------------------------------
+   RESPONSIVE
+---------------------------------------------------- */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav a {
+    font-size: 14px;
+  }
+
+  .judul-program h1 {
+    font-size: 28px;
+  }
+
+  .program-list h2 {
+    font-size: 24px;
+  }
+
+  .about-container {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+}
+
+
+/* === BACKGROUND GELOMBANG WARNA === */
+.wave-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+  background: linear-gradient(120deg, #6a5af9, #fcff4c, #6bf9d8);
+  background-size: 200% 200%;
+  animation: waveGradient 10s ease-in-out infinite;
+}
+
+/* Animasi Gradient */
+@keyframes waveGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Layer gelombang */
+.wave {
+  position: absolute;
+  bottom: 0;
+  width: 200%;
+  height: 150px;
+  background-repeat: repeat-x;
+  opacity: 0.5;
+  animation: waveMove 6s linear infinite;
+}
+
+.wave:nth-child(1) {
+  background: rgba(255, 255, 255, 0.25);
+  animation-duration: 8s;
+  height: 180px;
+}
+
+.wave:nth-child(2) {
+  background: rgba(255, 255, 255, 0.18);
+  animation-duration: 10s;
+  height: 130px;
+}
+
+.wave:nth-child(3) {
+  background: rgba(255, 255, 255, 0.12);
+  animation-duration: 13s;
+  height: 90px;
+}
+
+@keyframes waveMove {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.logoejur img{
+  width: 65px;
+  height: 65px;
+  border-radius: 60px;
+}
+
+/* BOX CONTAINER */
+.program-box {
+  width: 90%;
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 40px;
+  background: rgba(255, 178, 178, 0.15);
+  backdrop-filter: blur(8px);
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(252, 251, 251, 0.2);
+  border: 1px solid rgba(243, 236, 236, 0.2);
+}
+
+/* TITLE */
+.program-list h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 25px;
+  color: #fff;
+}
+
+/* GRID PROGRAM */
+.program-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+/* CARD */
+.card {
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 14px;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  border: 1px solid rgba(255,255,255,0.15);
+  color: rgb(0, 0, 0);
+  transition: .3s;
+}
+
+/* HOVER */
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  background: rgba(255,255,255,0.22);
+}
